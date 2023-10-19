@@ -1680,20 +1680,24 @@ section.blog-section.single-post .blog-box {
 /*------------------------------------------------- */
 /* =  Contact */
 /*------------------------------------------------- */
-#map {
-  width: 100%;
-  height: 640px; }
-
 section.contacting-section {
-  overflow: hidden; }
-  section.contacting-section #map {
+  overflow: hidden;
+margin: 0 auto; }
+#map-home {
+  width: 100%;
+  height: auto; }
+
+
+  section.contacting-section #map-home {
     float: left;
     width: 50%;
-    height: 556px; }
+    height: auto; }
   section.contacting-section .contacting-box {
     float: left;
     width: 50%;
     padding: 110px 110px 80px;
+
+    
     /*
    * Set a counter and get the length of the image path.
    */
@@ -1723,6 +1727,22 @@ section.contacting-section {
    * If anything went wrong trying to separate the file from its
    * extension, set a background value without doing anything to it.
    */ }
+
+   @media only screen and (max-width: 768px) {
+    .contacting-section {
+    flex-direction: column;
+   
+    }
+    #map-home{
+      flex-basis: 50%;
+      height: 270px;
+    }
+    .contacting-box{
+      flex-basis: 50%;
+      height: 270px;
+     
+    }
+  }
     @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
       section.contacting-section .contacting-box {
         background: #111 url("../upload/others/mov2@2x.jpg") center center no-repeat;
@@ -1730,7 +1750,8 @@ section.contacting-section {
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       section.contacting-section .contacting-box {
         background: #111 url("../upload/others/mov2@2x.jpg") center center no-repeat;
-        background-size: cover; } }
+        background-size: cover; 
+      flex-direction: column;} }
   section.contacting-section form#qcon-form {
     margin: 0;
     max-width: 490px;
