@@ -1679,6 +1679,18 @@ section.blog-section.single-post .blog-box {
     -moz-box-shadow: 0 12px 25px #b9bbd2;
     -o-box-shadow: 0 12px 25px #b9bbd2; }
 
+.whatsapp-chat {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-chat img {
+  width: 100px; /* You can adjust the size as needed */
+  height: auto;
+}  
+
 /*------------------------------------------------- */
 /* =  Contact */
 /*------------------------------------------------- */
