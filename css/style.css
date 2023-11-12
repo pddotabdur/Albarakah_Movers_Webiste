@@ -31,10 +31,12 @@
   margin: 0;
   padding: 0; }
 
+
+
 .paragraph, .form-search input[type="search"], p, section.blog-section .blog-box .blog-post ul.post-meta li, .pagination-box a.prev,
 .pagination-box a.next {
   font-size: 14px;
-  color: #999999;
+  color: #111111;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 28px;
@@ -398,7 +400,7 @@ section.quote-section {
     font-family: "Montserrat", sans-serif;
     max-width: 770px;
     margin: 0 auto;
-    color: #9a9a9a; }
+    color: #111; }
 
 .title-section.white-style h1 {
   color: #ffffff; }
