@@ -25,6 +25,18 @@
  21.Responsive part
 -------------------------------------------------*/
 
+.whatsapp-chat {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-chat img {
+  width: 100px;
+  height: 100px;
+}
+
 /* import google fonts */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,600,600i,700,800,900|Open+Sans:300,400,400i,600");
 .reset-elem, .top-line ul.info-list, .top-line ul.social-icons, ul.drop-down, section.moving-services-section .moving-services-box .moving-services-post .hover-services .inner-hover ul.serv-list, section.services-section .services-box .services-post .services-post-content ul.services-list, section.blog-section .blog-box .blog-post ul.post-meta, .pagination-box ul.page-list, .sidebar .category-widget ul, .sidebar .popular-widget ul.popular-list, .comment-area-box > ul, footer .up-footer .footer-widget ul.useful-list, footer .up-footer .footer-widget ul.social-icons, footer .up-footer .footer-widget ul.work-list {
@@ -1679,18 +1691,6 @@ section.blog-section.single-post .blog-box {
     -moz-box-shadow: 0 12px 25px #b9bbd2;
     -o-box-shadow: 0 12px 25px #b9bbd2; }
 
-.whatsapp-chat {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 1000;
-}
-
-.whatsapp-chat img {
-  width: 100px; /* You can adjust the size as needed */
-  height: auto;
-}  
-
 /*------------------------------------------------- */
 /* =  Contact */
 /*------------------------------------------------- */
@@ -2029,3 +2029,20 @@ footer {
 @media (max-width: 400px) {
   #home-section .tp-caption.Concept-SubTitle {
     font-size: 7px !important; } }
+    @media (max-width: 767px) {
+      .whatsapp-chat img {
+          width: 80px;
+          height: 80px;
+          right: 10px;
+          bottom: 10px;
+      }
+  }
+
+  @media (max-width: 500px) {
+      .whatsapp-chat img {
+          width: 60px;
+          height: 60px;
+          right: 5px;
+          bottom: 5px;
+      }
+  }
