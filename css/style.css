@@ -36,6 +36,26 @@
   width: 100px;
   height: 100px;
 }
+@media (max-width: 400px) {
+  #home-section .tp-caption.Concept-SubTitle {
+    font-size: 7px !important; } }
+    @media (max-width: 767px) {
+      .whatsapp-chat img {
+          width: 80px;
+          height: 80px;
+          right: 10px;
+          bottom: 10px;
+      }
+  }
+
+  @media (max-width: 500px) {
+      .whatsapp-chat img {
+          width: 60px;
+          height: 60px;
+          right: 5px;
+          bottom: 5px;
+      }
+  }
 
 /* import google fonts */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,600,600i,700,800,900|Open+Sans:300,400,400i,600");
