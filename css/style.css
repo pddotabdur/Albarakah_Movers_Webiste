@@ -2003,20 +2003,7 @@ footer {
     section.page-banner-section h1 {
       font-size: 36px; }
   section.blog-section .blog-box .blog-post {
-    padding-bottom: 30px; }
-
-  .whatsapp-chat {
-      position: fixed;
-      right: 10px;
-      bottom: 10px;
-      z-index: 1000;
-    }
-  
-  .whatsapp-chat img {
-      width: 80px;
-      height: 80px;
-    } 
-  }
+    padding-bottom: 30px; }  }
   
 
 @media (max-width: 500px) {
@@ -2025,28 +2012,4 @@ footer {
     section.moving-services-section .moving-services-box .moving-services-post .hover-services .inner-hover {
       padding: 35px 30px; }
   section.page-banner-section a {
-    display: none; }
-  .whatsapp-chat {
-      position: fixed;
-      right: 5px;
-      bottom: 5px;
-      z-index: 1000;}
-  
-  .whatsapp-chat img {
-      width: 60px;
-      height: 60px;} 
-  
-  }
-  /* WhatsApp chat button - Always visible */
-.whatsapp-chat {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 1000;
-}
-
-.whatsapp-chat img {
-  width: 100px;
-  height: 100px;
-}
-
+    display: none; }  }
