@@ -2040,7 +2040,7 @@ footer {
   /* WhatsApp chat button - Always visible */
 .whatsapp-chat {
   position: fixed;
-  right: 20px;
+  right: 60px;
   bottom: 20px;
   z-index: 1000;
 }
