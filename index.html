@@ -37,6 +37,15 @@
 						<div class="row">
 							<div class="col-sm-8">
 								<style>
+									/* Mobile view logo size adjustment */
+									.logo-mobile {
+										display: none; /* Hidden by default */
+									}
+
+									/* Mobile view contact number display next to the logo */
+									.contact-number-mobile {
+										display: none; /* Hidden by default */
+									}
 									.info-list {
 										text-align: right;
 										margin: 20px 0;
@@ -94,6 +103,19 @@
 											width: 80px; /* Adjust as needed */
 											height: 80px; /* Adjust as needed */
 										}
+										.logo-mobile {
+											display: block; /* Show the logo */
+											width: 60px; /* Adjust width as needed */
+											height: auto; /* Maintain aspect ratio */
+										}
+
+										.contact-number-mobile {
+											display: block; /* Show the phone number */
+											position: absolute;
+											right: 15px; /* Adjust right position as needed */
+											top: 20px; /* Adjust top position as needed */
+											font-size: 18px; /* Adjust font size as needed */
+										}
 									}
 
 									/* Smaller mobile view */
@@ -107,6 +129,15 @@
 										.whatsapp-chat img {
 											width: 60px; /* Adjust for smaller screens */
 											height: 60px; /* Adjust for smaller screens */
+										}
+										.logo-mobile {
+											width: 50px; /* Smaller logo for smaller screens */
+										}
+
+										.contact-number-mobile {
+											right: 10px; /* Adjust right position for smaller screens */
+											top: 15px; /* Adjust top position for smaller screens */
+											font-size: 16px; /* Smaller font size for smaller screens */
 										}
 									}
 								</style>
@@ -141,7 +172,16 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="index.html"><img src="images/logoupdated_cleanup - Copy.png" alt=""></a>
+						<a class="navbar-brand" href="index.html">
+							<!-- Original Image for Desktop -->
+							<img src="images/logoupdated_cleanup - Copy.png" alt="" class="logo-desktop">
+							<!-- Mobile Image -->
+							<img src="images/logoupdated_cleanup - Copy.png" alt="" class="logo-mobile">
+						</a>
+						<!-- Mobile Phone Number -->
+							<div class="contact-number-mobile">
+								<a href="tel:0525012899" class="phone-number">0525-012-899</a>
+							</div>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
