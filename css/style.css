@@ -1978,12 +1978,8 @@ footer {
   .top-line {
     display: none; }
   .navbar-brand {
-    float: none; /* Reset logo float to none */
-    display: inline-block; /* Align logo inline */
     padding: 30px 15px 22px; }
   .navbar-toggle {
-    display: block; /* Ensure the toggle button is displayed */
-    float: none; /* Reset float to none */
     margin-top: 20px; }
   .navbar-nav > li > a {
     padding: 5px 10px; }
