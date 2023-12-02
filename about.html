@@ -65,7 +65,60 @@
 										border-radius: 5px; /* Optional: Add border-radius for rounded corners */
 									}
 								</style>
-								
+								<style>
+									.logo-desktop {
+									display: block; /* Show desktop logo by default */
+									}
+
+									/* Mobile view contact number display next to the logo */
+									.contact-number-mobile {
+										display: none; /* Hidden by default */
+									}
+									/* Mobile view */
+									@media (max-width: 767px) {
+										.logo-desktop {
+											display: none; /* Hide the desktop logo on mobile */
+										}
+
+										.contact-number-mobile {
+											display: block; /* Show the phone number */
+											/* position: absolute; */
+										 /* Adjust top position as needed */
+											font-size: 18px; 
+											padding-top: 15px;
+											/* Adjust font size as needed */
+										}
+										.mobile-ph-no{
+											background: #f2f2f2;
+											font-size: larger;
+											padding: 0px 20px;
+											border-radius: 10px;
+											font-weight: bold;
+										}
+									}
+
+									/* Smaller mobile view */
+									@media (max-width: 480px) {
+									
+										.contact-number-mobile {
+										/* Adjust top position for smaller screens */
+											font-size: 16px; /* Smaller font size for smaller screens */
+										}
+										.mobile-ph-no{
+											background: #f2f2f2;
+											font-size: medium;
+											padding: 0px 10px;
+											border-radius: 10px;
+											font-weight: bold;
+										}
+										.logo-desktop {
+											display: block; /* Show the logo */
+											width: 100px; /* Adjust width as needed */
+											height: 40px; /* Maintain aspect ratio */
+										}
+									}
+								</style>
+
 								<ul class="info-list">
 									<li>
 										<div class="contact-info">
@@ -87,14 +140,33 @@
 						</div>
 					</div>
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="index.html"><img src="images/logoupdated_cleanup - Copy.png" alt=""></a>
+					<div class="navbar-header" >
+						<div>
+							<a class="navbar-brand" href="index.html">
+								<!-- Original Image for Desktop -->
+								<img  src="images/logoupdated_cleanup - Copy.png" alt="" class="logo-desktop">
+								<!-- Mobile Image -->
+								<!-- <img src="images/logoupdated_cleanup - Copy.png" alt="" class="logo-mobile"> -->
+							</a>
+
+						</div>
+						<!-- Mobile Phone Number -->
+							<div class="contact-number-mobile">
+								<a href="tel:0525012899" class="">
+									<h1 class="mobile-ph-no">
+										0525-012-899
+									</h1>
+								</a>
+							</div>
+							<div>
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+
+							</div>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
