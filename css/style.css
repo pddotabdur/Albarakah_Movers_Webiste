@@ -1983,7 +1983,7 @@ footer {
   .top-line {
     display: none; }
   .navbar-brand {
-
+    padding: 30px 15px 22px;
      }
   .navbar-toggle {
     height: 40px;
